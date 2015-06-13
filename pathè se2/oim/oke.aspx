@@ -1,0 +1,68 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="oke.aspx.cs" Inherits="oim.oke" %>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>pathé.nl</title>
+    <link rel="stylesheet" href="mystyle.css">
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <img src="pathe.png" height="100" width="200">
+    <div class="wrapper">
+        
+        <header>
+            
+
+            <h1>taken</h1>
+            <nav>
+                <ul>
+                    <li>home</li>
+                    <li><a runat="server"  href="~/films.aspx">films</a></li>
+                    <li><a runat="server"  href="~/bioscopen.aspx">bioscopen</a></li>
+                    <li><a runat="server"  href="~/trailers.aspx">trailers</a></li>
+                    <li><a runat="server"  href="~/mypathe.aspx">mijn pathe</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="courses">
+            <article>
+                <hgroup>
+                    <h1>home
+                    </h1>
+                    <h2>Welkom bij media design van ICT op het Fontys </h2>
+                    <h3>
+                        op deze website kunt uw informatie vinden over het vak<br>
+                        media design binnen de opleiding HBO-ICT op hogeschool<br>
+                        fontys in Eindhoven.
+                    </h3>
+                    </hgroup>
+                <hgroup>
+              
+                </hgroup>
+                <hgroup>
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton1_Click" Height="200px" Width="200px" />
+                               
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" Width="200px" OnClick="ImageButton2_Click" />
+                
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" />
+                
+                </hgroup>
+                <p>
+                    
+                    
+                    
+                </p>
+            </article>
+        </section>
+        <aside>
+            <section class="popular-recipes">   
+                <h3>trailerss:</h3>
+                 <object width="420" height="315"data="https://www.youtube.com/v/F-qBD17wwrQ"></object>
+                <object width="420" height="315"data="https://www.youtube.com/v/KmYNkasYthg"></object></footer>
+                
+    </div><!-- .wrapper -->
+    </form>
+</body>
+</html>

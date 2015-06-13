@@ -1,0 +1,14 @@
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\bin\oim.dll.config
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\bin\oim.dll
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\bin\oim.pdb
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\obj\Debug\pathese2.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\obj\Debug\oim.dll
+C:\Users\Mark\Desktop\school\se23\SE2\pathè se2\oim\obj\Debug\oim.pdb
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\bin\oim.dll.config
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\bin\oim.dll
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\bin\oim.pdb
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\bin\Oracle.ManagedDataAccess.dll
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\obj\Debug\pathese2.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\obj\Debug\oim.dll
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\oim\obj\Debug\oim.pdb

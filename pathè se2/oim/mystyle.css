@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>OIM opdracht</title>
+ <style type="text/css">
+ header, section, footer, aside, nav, article, figure, figcaption { 
+ display: block;} 
+ body {
+
+ color: yellow; 
+ background-color: #f9f8f6; 
+ background-image: url("geel.jpg"); 
+ background-position: center; 
+ font-family: nazara, times, serif; 
+ line-height: 1.4em; 
+ margin: 0px;
+}
+@font-face {
+    font-family: 'nazara';
+    src: url('c7nazara.ttf'); 
+}
+
+ .wrapper {
+
+ width: 940px; 
+ margin: 20px auto 20px auto; 
+ border: 0px solid #000000; 
+ background-color: gray;} 
+ 
+ h1 { 
+ text-indent: -9999px; 
+ width: 940px; 
+ height: 0px; 
+ margin: 0px;} 
+ nav, footer { 
+  text-align:center;
+   clear: both; 
+ color: #000000; 
+ background-image: url(o,o,1);
+ height: 30px;} 
+  nav ul { 
+ margin: 0px; 
+ padding: 5px 0px 5px 30px;} 
+ nav li { 
+ display: inline; 
+  margin-right: 40px;} 
+ nav li a { 
+    color: #cd0e29;} 
+ nav li a:hover, nav li a.current { 
+ color: #d9b50f;} 
+ section.courses { 
+ float: left; 
+ width: 938px; 
+ border-right: 0px solid #eeeeee;
+} 
+ article { 
+ float: left;
+ clear: none; 
+ overflow: inherit; 
+ width: 900px;
+ padding: 60px}
+
+ hgroup { 
+ margin-top:40px;
+ color: yellow; } 
+ figure { 
+ float: left; 
+ width: 290px; 
+ height: 220px; 
+ padding: 5px; 
+ margin: 20px; 
+ border: 0px solid #eeeeee;} 
+ figcaption { 
+ font-size: 90%; 
+ text-align: left;} 
+ aside { 
+ display: center;
+ width: 900px; 
+ float: none; 
+ padding: 0px 0px 0px 20px;} 
+ aside section a {
+ display: inline; 
+ padding: 40px; 
+ border-bottom: 0px solid #eeeeee;} 
+ aside section a:hover { 
+  
+ a { 
+ color: yellow; 
+ text-decoration: none;} 
+ h1, h2, h3 { 
+ font-weight: normal;} 
+ h2 { 
+  width: 940px;
+  margin: 10px 0px 5px 0px; 
+ padding: 0px;} 
+ h3 { 
+ margin: 0px 0px 10px 0px; 
+ color: yellow;} 
+ aside h2 { 
+ padding: 50px 0px 10px 0px; 
+ color: yellow;} 
+ footer { 
+ font-size: 80%; 
+ padding: 7px 0px 0px 20px;}
+ </style>
+ </head>
