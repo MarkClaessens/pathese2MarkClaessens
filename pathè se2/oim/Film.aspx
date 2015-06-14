@@ -40,7 +40,8 @@
  <section class="popular-recipes">
  
  </section>
- 
+     <asp:Label ID="Label1" runat="server" Text="Snel ticket kopen voor deze film"></asp:Label>
+     <asp:Button ID="Button1" runat="server" Text="koop ticket" OnClick="Button1_Click"></asp:Button>
  </aside>
  <footer>
  &copy; 2014 Mark Claessens
