@@ -11,7 +11,7 @@ namespace oim
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //alle films staan in een lijst langs elkaar
         }
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)

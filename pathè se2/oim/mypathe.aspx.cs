@@ -11,6 +11,7 @@ namespace oim
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //kijkt of er al ingelogd is
             if((bool)Session["ingelogd"] == true)
             {
                 Response.Redirect("mijningelogdepathe.aspx");
@@ -19,6 +20,7 @@ namespace oim
 
         protected void Btnlogin_Click(object sender, EventArgs e)
         {
+            // logt in met een account dat in de class gebruiker staat.
             try
             {
                 Zoekers zoeker = (Zoekers)Session["zoeker"];

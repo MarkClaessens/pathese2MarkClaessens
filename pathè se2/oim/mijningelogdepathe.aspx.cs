@@ -18,6 +18,7 @@ namespace oim
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            //haalt alle tickets op voor de gebruiker die nu ingelogd is en zet de informatie van de film dmv innerhtml van een div in de site.
             zoeker = (Zoekers)Session["zoeker"];
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {

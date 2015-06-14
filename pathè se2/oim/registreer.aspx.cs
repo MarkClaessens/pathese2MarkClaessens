@@ -19,7 +19,7 @@ namespace oim
 
         protected void btnconfirm_Click(object sender, EventArgs e)
         {
-            
+            //maakt met de gegevens die je invoert een account aan in de database
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
                 int moviecount = (int)Session["moviecount"];

@@ -15,6 +15,7 @@ namespace oim
         Kijkfilm film;
         protected void Page_Load(object sender, EventArgs e)
         {
+            // de film die aangeklikt is wordt door een session doorgegeven en de info wordt op de pagina gezet
             string filmnaam = (string)Session["filmnaam"];
             Zoekers zoeker = (Zoekers)Session["zoeker"];
             Labelfilmaam.Text = filmnaam;
@@ -29,6 +30,7 @@ namespace oim
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //als je op de knop drukt dan wordt er voor de film waar je bent een ticket gekocht mits je ingelogt bent anders wordt je naar de inlog geleid
             if (Session["ingelogdaccount"] != null)
             {
                 Gebruiker gebruiker = (Gebruiker)Session["ingelogdaccount"];

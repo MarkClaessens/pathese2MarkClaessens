@@ -17,6 +17,7 @@ namespace oim
         
         protected void Page_Load(object sender, EventArgs e)
         {
+            //dit is de home page dus hier haal ik alles uit de database en zet ik film, bioscopen en gebruikers in de database
             if (Session["ingelogd"] == null)
             {
                 Session["ingelogd"] = ingelogd;
@@ -24,8 +25,7 @@ namespace oim
             zoeker = new Zoekers();
             Session["zoeker"] = zoeker;
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
-            {
-                
+            {                
                 con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
                 con.Open();
                 DbCommand com = OracleClientFactory.Instance.CreateCommand();
@@ -88,6 +88,7 @@ namespace oim
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
         {
+            //als je op de plaatjes klikt ga je naar hun pagina, door de session weet hij welke pagina hij moet laden
             Session["filmnaam"] = "Jurrasic World";
             Response.Redirect("film.aspx");
         }
@@ -106,6 +107,7 @@ namespace oim
 
         protected void Btnzoek_Click(object sender, EventArgs e)
         {
+            //hij zoekt na een film die enigzins overeen komt met de textbox text
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
 
@@ -137,6 +139,7 @@ namespace oim
 
         protected void Btnkoop_Click(object sender, EventArgs e)
         {
+            //nadat hij een item heeft gevonden kun je voor die film een ticket kopen mits je ingelogd bent
             if(Session["ingelogdaccount"] != null)
             {
                 Gebruiker gebruiker = (Gebruiker)Session["ingelogdaccount"];

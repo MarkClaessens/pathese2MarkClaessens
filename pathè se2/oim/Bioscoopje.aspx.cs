@@ -11,6 +11,7 @@ namespace oim
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            // laad de geselecteerde bioscoop in op de pagina
             string filmnaam = (string)Session["bioscoopnaam"];
             Zoekers zoeker = (Zoekers)Session["zoeker"];
             Labelnaam.Text = filmnaam;

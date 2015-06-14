@@ -13,7 +13,7 @@ namespace oim
 {
     public partial class bioscopen : System.Web.UI.Page
     {
-        
+        // pagina met buttons waar je een bioscoop kunt kiezen
         protected void Page_Load(object sender, EventArgs e)
         {
             Zoekers zoeker = (Zoekers)Session["zoeker"];

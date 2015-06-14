@@ -9,13 +9,13 @@ namespace oim
     {
         List<onderdeel> onderdelen;
         List<Gebruiker> gebruikers;
-        List<Ticket> tickets;
+        //deze class zorgt ervoor dat alles op zijn plek gezet wordt en dat alles er weer uitgehaald wordt
              
         public Zoekers()
         {
             onderdelen = new List<onderdeel>();
             gebruikers = new List<Gebruiker>();
-            tickets = new List<Ticket>();
+            
         }
 
         public void addfilm(int id, string FILMNAAM, string GENRE, int DUUR, string REGISSEUR, string TAAL, string LINK)
