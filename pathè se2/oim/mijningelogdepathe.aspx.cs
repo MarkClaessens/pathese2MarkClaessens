@@ -44,7 +44,7 @@ namespace oim
                 }
                 catch
                 {
-
+                    contentdiv.InnerHtml += "DATABASEFOUT_TF";
                 }
                 
             }

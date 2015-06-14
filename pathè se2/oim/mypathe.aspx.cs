@@ -37,7 +37,8 @@ namespace oim
             }
             catch
             {
-             
+                Tbmail.Text = "foutmelding";
+                Tbww.Text = "foutmelding";
             }
         }
 

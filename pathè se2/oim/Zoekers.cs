@@ -19,9 +19,9 @@ namespace oim
         }
 
         public void addfilm(int id, string FILMNAAM, string GENRE, int DUUR, string REGISSEUR, string TAAL, string LINK)
-        {
-            onderdeel film = new Kijkfilm(id, FILMNAAM, GENRE, DUUR, REGISSEUR, TAAL, LINK);
-            onderdelen.Add(film);
+        {            
+                onderdeel film = new Kijkfilm(id, FILMNAAM, GENRE, DUUR, REGISSEUR, TAAL, LINK);
+                onderdelen.Add(film);
         }
         public void addbioscoop(string bioscoopnaam, string description, string path)
         {

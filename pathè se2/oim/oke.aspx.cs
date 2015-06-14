@@ -45,7 +45,7 @@ namespace oim
                 }
                 catch
                 {
-
+                    Tbcheckedfilm.Text = "databasefout_film";
                 }
                 DbCommand comp = OracleClientFactory.Instance.CreateCommand();
                 comp.Connection = con;
@@ -62,7 +62,7 @@ namespace oim
                 }
                 catch
                 {
-
+                    Tbcheckedfilm.Text = "databasefout_bioscoop";
                 }
                 DbCommand comm = OracleClientFactory.Instance.CreateCommand();
                 comm.Connection = con;
@@ -81,7 +81,7 @@ namespace oim
                 }
                 catch
                 {
-
+                    Tbcheckedfilm.Text = "databasefout_gebruiker";
                 }
             }
         }
@@ -132,7 +132,7 @@ namespace oim
                 }
                 catch
                 {
-
+                    Tbcheckedfilm.Text = "niks gevonden";
                 }
             }
         }
@@ -145,21 +145,29 @@ namespace oim
                 Gebruiker gebruiker = (Gebruiker)Session["ingelogdaccount"];
                 using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
                 {
-                    int aantalticks = -1; ;
-                    con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
-                    con.Open();
-                    DbCommand comm = OracleClientFactory.Instance.CreateCommand();
-                    comm.Connection = con;
-                    comm.CommandText = "SELECT COUNT(*) from TICKET";
-                    DbDataReader reader = comm.ExecuteReader();
-                    while (reader.Read())
+                    try
                     {
-                        aantalticks = reader.GetInt32(0) + 1;
+                        int aantalticks = -1; ;
+                        con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
+                        con.Open();
+                        DbCommand comm = OracleClientFactory.Instance.CreateCommand();
+                        comm.Connection = con;
+                        comm.CommandText = "SELECT COUNT(*) from TICKET";
+                        DbDataReader reader = comm.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            aantalticks = reader.GetInt32(0) + 1;
+                        }
+                        DbCommand com = OracleClientFactory.Instance.CreateCommand();
+                        com.Connection = con;
+                        com.CommandText = "insert into ticket(ticketNR, gebruikerNR, filmNR) values(" + aantalticks + "," + gebruiker.gebruikerNR + "," + (int)Session["nummer"] + ")";
+                        com.ExecuteNonQuery();
                     }
-                    DbCommand com = OracleClientFactory.Instance.CreateCommand();
-                    com.Connection = con;
-                    com.CommandText = "insert into ticket(ticketNR, gebruikerNR, filmNR) values(" + aantalticks + "," + gebruiker.gebruikerNR + "," + (int)Session["nummer"] + ")";
-                    com.ExecuteNonQuery();
+                    catch
+                    {
+                        Tbcheckedfilm.Text = "databasefout_insert";
+                    }
+                    
                 }
             }
             else
