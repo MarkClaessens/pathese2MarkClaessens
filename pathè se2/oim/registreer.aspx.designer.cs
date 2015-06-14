@@ -10,7 +10,7 @@
 namespace oim {
     
     
-    public partial class oke {
+    public partial class registreer {
         
         /// <summary>
         /// form1 control.
@@ -22,84 +22,120 @@ namespace oim {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 control.
+        /// lblvoornaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblvoornaam;
         
         /// <summary>
-        /// Label2 control.
+        /// Tbvoornaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.TextBox Tbvoornaam;
         
         /// <summary>
-        /// tbfilmnaam control.
+        /// lblachternaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbfilmnaam;
+        protected global::System.Web.UI.WebControls.Label lblachternaam;
         
         /// <summary>
-        /// Btnzoek control.
+        /// Tbachternaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnzoek;
+        protected global::System.Web.UI.WebControls.TextBox Tbachternaam;
         
         /// <summary>
-        /// Tbcheckedfilm control.
+        /// lblgeboortedatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Tbcheckedfilm;
+        protected global::System.Web.UI.WebControls.Label lblgeboortedatum;
         
         /// <summary>
-        /// Btnkoop control.
+        /// Tbgeboortedatum control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnkoop;
+        protected global::System.Web.UI.WebControls.TextBox Tbgeboortedatum;
         
         /// <summary>
-        /// ImageButton1 control.
+        /// lblgeslacht control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
+        protected global::System.Web.UI.WebControls.Label lblgeslacht;
         
         /// <summary>
-        /// ImageButton2 control.
+        /// Tbgeslacht control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton2;
+        protected global::System.Web.UI.WebControls.TextBox Tbgeslacht;
         
         /// <summary>
-        /// ImageButton3 control.
+        /// lblemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton ImageButton3;
+        protected global::System.Web.UI.WebControls.Label lblemail;
+        
+        /// <summary>
+        /// Tbemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Tbemail;
+        
+        /// <summary>
+        /// lblww control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblww;
+        
+        /// <summary>
+        /// Tbww control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Tbww;
+        
+        /// <summary>
+        /// btnconfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnconfirm;
     }
 }

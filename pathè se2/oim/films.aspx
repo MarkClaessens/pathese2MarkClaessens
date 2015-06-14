@@ -25,7 +25,7 @@
  </nav>
  </header>
  <section class="courses">
-     <
+     
      <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton2_Click" Width="200px" />
      <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" OnClick="ImageButton3_Click" Width="200px" />
      <asp:ImageButton ID="ImageButton1" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" OnClick="ImageButton1_Click" Width="200px" />

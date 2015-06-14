@@ -33,26 +33,28 @@
             <article>
                 <hgroup>
                     <h1>home
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                     </h1>
-                    <h2>Welkom bij media design van ICT op het Fontys </h2>
+                    <h2>Snel een ticket kopen</h2>
                     <h3>
-                        op deze website kunt uw informatie vinden over het vak<br>
-                        media design binnen de opleiding HBO-ICT op hogeschool<br>
-                        fontys in Eindhoven.
+                        
+                        <asp:Label ID="Label2" runat="server" Text="filmnaam:"></asp:Label>
+                        <asp:TextBox ID="tbfilmnaam" runat="server"></asp:TextBox>
+                        <asp:Button ID="Btnzoek" runat="server" Text="zoek film" OnClick="Btnzoek_Click" />
+                        <asp:TextBox ID="Tbcheckedfilm" runat="server" ReadOnly="True"></asp:TextBox>
+                        <asp:Button ID="Btnkoop" runat="server" Text="koop ticket" Enabled="False" OnClick="Btnkoop_Click" />
+                        
                     </h3>
                     </hgroup>
                 <hgroup>
               
                 </hgroup>
                 <hgroup>
-                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton1_Click" Height="200px" Width="200px" />
-                               
-                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" Width="200px" OnClick="ImageButton2_Click" />
-                
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" />
-                
                 </hgroup>
-                
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton1_Click" Height="200px" Width="200px" />          
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" Width="200px" OnClick="ImageButton2_Click" />
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" />
+                               
                 <p>
                     
                     

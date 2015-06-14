@@ -8,11 +8,14 @@ namespace oim
     public class Zoekers
     {
         List<onderdeel> onderdelen;
-
-
+        List<Gebruiker> gebruikers;
+        List<Ticket> tickets;
+             
         public Zoekers()
         {
             onderdelen = new List<onderdeel>();
+            gebruikers = new List<Gebruiker>();
+            tickets = new List<Ticket>();
         }
 
         public void addfilm(int id, string FILMNAAM, string GENRE, int DUUR, string REGISSEUR, string TAAL, string LINK)
@@ -24,6 +27,12 @@ namespace oim
         {
             Bioscoop bioscoop = new Bioscoop(bioscoopnaam, description, path);
             onderdelen.Add(bioscoop);
+        }
+        public void addgebruiker(int gebruikNr, string voornaam, string achternaam, string geslacht, string email, string wachtwoord)
+        {
+            Gebruiker gebruiker = new Gebruiker(gebruikNr, voornaam, achternaam, geslacht, email, wachtwoord);
+            gebruikers.Add(gebruiker);
+            
         }
         public Kijkfilm getfilm(string filmnaam)
         {
@@ -54,6 +63,17 @@ namespace oim
                 }
 
                 
+            }
+            return null;
+        }
+        public Gebruiker login(string email, string ww)
+        {
+            foreach (Gebruiker gebruker in gebruikers)
+            {
+                if(gebruker.email == email && gebruker.wachtwoord == ww)
+                {
+                    return gebruker;
+                }
             }
             return null;
         }

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mypathe.aspx.cs" Inherits="oim.mypathe" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="mijningelogdepathe.aspx.cs" Inherits="oim.mijningelogdepathe" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
@@ -27,20 +27,17 @@
  <section class="courses">
   <article>
     
-      Inloggen:
-&nbsp;<p>
+      <h2>Mijn tickets:</h2>
+      <div id="contentdiv" runat="server">       
+     </div>
+   <p>
        
-       <asp:Label ID="Label1" runat="server" Text="email:"></asp:Label><br>
-       <asp:TextBox ID="Tbmail" runat="server"></asp:TextBox><br>
-       <asp:Label ID="Label2" runat="server" Text="wachtwoord:"></asp:Label><br>     
-       <asp:TextBox ID="Tbww" runat="server"></asp:TextBox><br><br><br>
-       <asp:Button ID="Btnlogin" runat="server" Text="log in" OnClick="Btnlogin_Click" />
+       
       </p>
  </article> 
  </section>
  <aside>
  <section class="popular-recipes"> 
- <a href="/registreer.aspx">heb je nog geen account? registreer je hier</a> 
  </section>
  
  </aside>
@@ -51,3 +48,4 @@
     </form>
 </body>
 </html>
+

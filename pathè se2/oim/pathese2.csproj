@@ -78,9 +78,11 @@
     <Content Include="Images\shaun.jpg" />
     <Content Include="Images\spy.jpg" />
     <Content Include="Images\tilburg.jpg" />
+    <Content Include="mijningelogdepathe.aspx" />
     <Content Include="mypathe.aspx" />
     <Content Include="mystyle.css" />
     <Content Include="oke.aspx" />
+    <Content Include="registreer.aspx" />
     <Content Include="trailers.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
@@ -116,6 +118,14 @@
     <Compile Include="films.aspx.designer.cs">
       <DependentUpon>films.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Gebruiker.cs" />
+    <Compile Include="mijningelogdepathe.aspx.cs">
+      <DependentUpon>mijningelogdepathe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mijningelogdepathe.aspx.designer.cs">
+      <DependentUpon>mijningelogdepathe.aspx</DependentUpon>
+    </Compile>
     <Compile Include="mypathe.aspx.cs">
       <DependentUpon>mypathe.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -132,6 +142,13 @@
     </Compile>
     <Compile Include="onderdeel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registreer.aspx.cs">
+      <DependentUpon>registreer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="registreer.aspx.designer.cs">
+      <DependentUpon>registreer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -139,6 +156,7 @@
     <Compile Include="Site1.Master.designer.cs">
       <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
+    <Compile Include="Ticket.cs" />
     <Compile Include="trailers.aspx.cs">
       <DependentUpon>trailers.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -11,7 +11,34 @@ namespace oim
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            if((bool)Session["ingelogd"] == true)
+            {
+                Response.Redirect("mijningelogdepathe.aspx");
+            }
         }
+
+        protected void Btnlogin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Zoekers zoeker = (Zoekers)Session["zoeker"];
+                Gebruiker ingelogdegebruiker = zoeker.login(Tbmail.Text, Tbww.Text);
+                if (ingelogdegebruiker != null)
+                {
+                    Session["ingelogdaccount"] = ingelogdegebruiker;
+                    Session["ingelogd"] = true;
+
+                    Response.Redirect("mijningelogdepathe.aspx");
+                    
+                }
+                
+            }
+            catch
+            {
+             
+            }
+        }
+
+        
     }
 }
