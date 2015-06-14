@@ -10,7 +10,7 @@
 namespace oim {
     
     
-    public partial class Film {
+    public partial class Bioscoopje {
         
         /// <summary>
         /// form1 control.
@@ -22,57 +22,30 @@ namespace oim {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Labelfilmaam control.
+        /// Imagebioscoop control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labelfilmaam;
+        protected global::System.Web.UI.WebControls.Image Imagebioscoop;
         
         /// <summary>
-        /// Labelgenre control.
+        /// Labelnaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labelgenre;
+        protected global::System.Web.UI.WebControls.Label Labelnaam;
         
         /// <summary>
-        /// Labelduur control.
+        /// Labeldesc control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labelduur;
-        
-        /// <summary>
-        /// Labelregisseur control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labelregisseur;
-        
-        /// <summary>
-        /// Labeltaal control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labeltaal;
-        
-        /// <summary>
-        /// Imagefilm control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Imagefilm;
+        protected global::System.Web.UI.WebControls.Label Labeldesc;
     }
 }

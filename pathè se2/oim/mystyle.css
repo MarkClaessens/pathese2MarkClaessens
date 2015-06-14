@@ -7,7 +7,7 @@
  display: block;} 
  body {
 
- color: yellow; 
+ color: black; 
  background-color: #f9f8f6; 
  background-image: url("geel.jpg"); 
  background-position: center; 
@@ -25,14 +25,14 @@
  width: 940px; 
  margin: 20px auto 20px auto; 
  border: 0px solid #000000; 
- background-color: gray;} 
+ background-color: whitesmoke;} 
  
  h1 { 
  text-indent: -9999px; 
  width: 940px; 
  height: 0px; 
  margin: 0px;} 
- nav, footer { 
+nav, footer { 
   text-align:center;
    clear: both; 
  color: #000000; 
@@ -46,8 +46,19 @@
   margin-right: 40px;} 
  nav li a { 
     color: #cd0e29;} 
+    //als je er over gaat met de muis.
  nav li a:hover, nav li a.current { 
  color: #d9b50f;} 
+ section.courses { 
+ float: left; 
+ width: 700px; 
+ border-right: 0px solid #eeeeee;} 
+ article { 
+ float: left;
+ clear: none; 
+ overflow: inherit; 
+ width: 900px;
+ padding: 60px}
  section.courses { 
  float: left; 
  width: 938px; 
@@ -62,7 +73,7 @@
 
  hgroup { 
  margin-top:40px;
- color: yellow; } 
+ color: black; } 
  figure { 
  float: left; 
  width: 290px; 

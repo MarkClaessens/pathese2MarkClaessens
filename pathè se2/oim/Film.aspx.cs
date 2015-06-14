@@ -15,7 +15,7 @@ namespace oim
             Zoekers zoeker = (Zoekers)Session["zoeker"];
             Labelfilmaam.Text = filmnaam;
             Kijkfilm film = zoeker.getfilm(filmnaam);
-            Imagebioscoop.ImageUrl = film.LINK;
+            Imagefilm.ImageUrl = film.path;
             Labelgenre.Text = "genre: " + film.GENRE;
             Labelduur.Text = "duur: " + Convert.ToString(film.DUUR) + " min";
             Labelregisseur.Text = "regisseur: " + film.REGISSEUR;

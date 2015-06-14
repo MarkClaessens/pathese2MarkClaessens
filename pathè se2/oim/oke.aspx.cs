@@ -19,19 +19,12 @@ namespace oim
             Session["zoeker"] = zoeker;
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
-                if (con == null)
-                {
-                    //return "Error! No Connection";
-                }
+                
                 con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
                 con.Open();
                 DbCommand com = OracleClientFactory.Instance.CreateCommand();
-                if (com == null)
-                {
-                    //return "Error! No Command";
-                }
                 com.Connection = con;
-                com.CommandText = "SELECT FILMNAAM,GENRE,DUUR,REGISSEUR,TAAL,LINK FROM FILM";
+                com.CommandText = "SELECT * FROM FILM";
                 DbDataReader reader = com.ExecuteReader();
                 try
                 {
@@ -39,7 +32,24 @@ namespace oim
                     
                     while (reader.Read())
                     {
-                        zoeker.addfilm(reader.GetString(0).Trim(), reader.GetString(1).Trim(), reader.GetInt32(2), reader.GetString(3).Trim(), reader.GetString(4).Trim(), reader.GetString(5).Trim());
+                        zoeker.addfilm(reader.GetInt32(0), reader.GetString(1).Trim(), reader.GetString(2).Trim(), reader.GetInt32(3), reader.GetString(4).Trim(), reader.GetString(5).Trim(), reader.GetString(6).Trim());
+                    }
+                }
+                catch
+                {
+
+                }
+                DbCommand comp = OracleClientFactory.Instance.CreateCommand();
+                comp.Connection = con;
+                comp.CommandText = "SELECT * FROM bioscoop";
+                DbDataReader rd = comp.ExecuteReader();
+                try
+                {
+                    //dropdownmenu
+
+                    while (rd.Read())
+                    {
+                        zoeker.addbioscoop(rd.GetString(0).Trim(), rd.GetString(1).Trim(), rd.GetString(2).Trim());
                     }
                 }
                 catch
@@ -66,5 +76,6 @@ namespace oim
             Session["filmnaam"] = "Minions";
             Response.Redirect("film.aspx");
         }
+        
     }
 }

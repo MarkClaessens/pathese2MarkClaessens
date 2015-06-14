@@ -5,23 +5,22 @@ using System.Web;
 
 namespace oim
 {
-    public class Kijkfilm
+    public class Kijkfilm : onderdeel
     {
-        public string FILMNAAM { get; set; }
+        public int id { get; set; }
         public string GENRE { get; set; }
         public int DUUR { get; set; }
         public string REGISSEUR { get; set; }
         public string TAAL { get; set; }
-        public string LINK { get; set; }
+       
 
-        public Kijkfilm(string filmnaam, string genre, int duur, string regisseur, string taal, string link)
+        public Kijkfilm(int id, string filmnaam, string genre, int duur, string regisseur, string taal, string link) : base(filmnaam, link)
         {
-            this.FILMNAAM = filmnaam;
+            this.id = id;
             this.GENRE = genre;
             this.DUUR = duur;
             this.REGISSEUR = regisseur;
-            this.TAAL = taal;
-            this.LINK = link;
+            this.TAAL = taal;            
         }
 
     }

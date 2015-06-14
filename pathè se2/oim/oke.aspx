@@ -18,12 +18,15 @@
             <h1>taken</h1>
             <nav>
                 <ul>
-                    <li>home</li>
+                    <li><a runat="server">Home</a></li>
                     <li><a runat="server"  href="~/films.aspx">films</a></li>
-                    <li><a runat="server"  href="~/bioscopen.aspx">bioscopen</a></li>
+                    <li><a runat="server" href="~/bioscopen.aspx">bioscopen</a>                                     
+                    </li>
                     <li><a runat="server"  href="~/trailers.aspx">trailers</a></li>
                     <li><a runat="server"  href="~/mypathe.aspx">mijn pathe</a></li>
                 </ul>
+                <br>
+                <br>
             </nav>
         </header>
         <section class="courses">
@@ -49,6 +52,7 @@
                 <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" />
                 
                 </hgroup>
+                
                 <p>
                     
                     
@@ -60,7 +64,7 @@
             <section class="popular-recipes">   
                 <h3>trailerss:</h3>
                  <object width="420" height="315"data="https://www.youtube.com/v/F-qBD17wwrQ"></object>
-                <object width="420" height="315"data="https://www.youtube.com/v/KmYNkasYthg"></object></footer>
+                <object width="420" height="315"data="https://www.youtube.com/v/KmYNkasYthg"></object>
                 
     </div><!-- .wrapper -->
     </form>
