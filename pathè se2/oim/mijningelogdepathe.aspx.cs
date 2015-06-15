@@ -23,6 +23,9 @@ namespace oim
             using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
             {
                 Gebruiker gebruker = (Gebruiker)Session["ingelogdaccount"];
+                Lblvoornaam.Text = "voornaam: " + gebruker.voornaam;
+                Lblachternaam.Text = "achternaam: " + gebruker.achternaam;
+                Lblemail.Text ="e-mail: "+ gebruker.email;
                 con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
                 con.Open();
                 DbCommand com = OracleClientFactory.Instance.CreateCommand();
@@ -48,6 +51,13 @@ namespace oim
                 }
                 
             }
+        }
+
+        protected void btnuitlog_Click(object sender, EventArgs e)
+        {
+            Session["ingelogd"] = false;
+            Session["ingelogdaccount"] = null;
+            Response.Redirect("mypathe.aspx");
         }
     }
 }

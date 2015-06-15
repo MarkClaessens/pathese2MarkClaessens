@@ -21,13 +21,19 @@
  <li><a runat="server"  href="~/bioscopen.aspx">bioscopen</a></li>
  <li><a runat="server"  href="~/trailers.aspx">trailers</a></li>
  <li>mijn pathe</li>
+     <li>
+         <asp:Button ID="btnuitlog" runat="server" OnClick="btnuitlog_Click" Text="uitloggen" />
+     </li>
  </ul>
  </nav>
  </header>
  <section class="courses">
   <article>
-    
-      <h2>Mijn tickets:</h2>
+       <asp:Label ID="Lblvoornaam" runat="server" Text="Label"></asp:Label><br>
+       <asp:Label ID="Lblachternaam" runat="server" Text="Label"></asp:Label><br>
+       <asp:Label ID="Lblemail" runat="server" Text="Label"></asp:Label><br>       
+      <h2>Mijn tickets:
+      </h2>
       <div id="contentdiv" runat="server">       
      </div>
    <p>

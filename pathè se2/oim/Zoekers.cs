@@ -19,23 +19,27 @@ namespace oim
         }
         
         public void addfilm(int id, string FILMNAAM, string GENRE, int DUUR, string REGISSEUR, string TAAL, string LINK)
-        {            
+        {        
+            //maakt een film aan en voegt die toe aan de lijst met films en bioscopen
                 onderdeel film = new Kijkfilm(id, FILMNAAM, GENRE, DUUR, REGISSEUR, TAAL, LINK);
                 onderdelen.Add(film);
         }
         public void addbioscoop(string bioscoopnaam, string description, string path)
         {
+            //maakt een bioscoop aan en voegt die toe aan de lijst met films en bioscopen
             Bioscoop bioscoop = new Bioscoop(bioscoopnaam, description, path);
             onderdelen.Add(bioscoop);
         }
         public void addgebruiker(int gebruikNr, string voornaam, string achternaam, string geslacht, string email, string wachtwoord)
         {
+            //maakt een gebruiker aan en voegt die toe aan de lijst met gebruikers
             Gebruiker gebruiker = new Gebruiker(gebruikNr, voornaam, achternaam, geslacht, email, wachtwoord);
             gebruikers.Add(gebruiker);
             
         }
         public Kijkfilm getfilm(string filmnaam)
         {
+            //zoekt een film met de naam die gelijk is aan de mee gegeven string
             foreach (onderdeel onderdeeltje in onderdelen)
             {
                 if (onderdeeltje is Kijkfilm)
@@ -51,6 +55,7 @@ namespace oim
         }
         public Bioscoop getbioscoop(string bioscoopnaam)
         {
+            //zoekt een bioscoop met de naam die gelijk is aan de mee gegeven string
             foreach (onderdeel onderdeeltje in onderdelen)
             {
                 if (onderdeeltje is Bioscoop)
@@ -68,6 +73,7 @@ namespace oim
         }
         public Gebruiker login(string email, string ww)
         {
+            //zoekt een gebruiker met de naam die gelijk is aan de mee gegeven string
             foreach (Gebruiker gebruker in gebruikers)
             {
                 if(gebruker.email == email && gebruker.wachtwoord == ww)

@@ -42,33 +42,7 @@ namespace oim
             }
             catch
             {
-                btnconfirm.Enabled = false;
-                if(Tbvoornaam.Text == null)
-                {
-                    Tbvoornaam.Text = "vul in";
-                }
-                if (Tbachternaam.Text == null)
-                {
-                    Tbachternaam.Text = "vul in";
-                }
-                if (Tbgeslacht.Text == null)
-                {
-                    Tbgeslacht.Text = "vul in";
-                }
-                if (Tbgeboortedatum.Text == null)
-                {
-                    Tbgeboortedatum.Text = "vul in";
-                }
-                if (Tbemail.Text == null)
-                {
-                    Tbemail.Text = "vul in";
-                }
-                if (Tbww.Text == null)
-                {
-                    Tbww.Text = "vul in";
-                }
-                              
-                
+                btnconfirm.Enabled = false;             
             }
         }
     }

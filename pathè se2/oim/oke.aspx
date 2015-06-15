@@ -39,10 +39,14 @@
                     <h3>
                         
                         <asp:Label ID="Label2" runat="server" Text="filmnaam:"></asp:Label>
-                        <asp:TextBox ID="tbfilmnaam" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="tbfilmnaam" runat="server"></asp:TextBox>                        
                         <asp:Button ID="Btnzoek" runat="server" Text="zoek film" OnClick="Btnzoek_Click" />
                         <asp:TextBox ID="Tbcheckedfilm" runat="server" ReadOnly="True"></asp:TextBox>
-                        <asp:Button ID="Btnkoop" runat="server" Text="koop ticket" Enabled="False" OnClick="Btnkoop_Click" />
+                        <asp:Button ID="Btnkoop" runat="server" Text="koop ticket" Enabled="False" OnClick="Btnkoop_Click" /><br>
+                        <asp:RequiredFieldValidator runat=server 
+                            controltovalidate=tbfilmnaam
+                            errormessage="filmnaam is required.">*filmnaam is required
+                        </asp:RequiredFieldValidator>
                         
                     </h3>
                     </hgroup>

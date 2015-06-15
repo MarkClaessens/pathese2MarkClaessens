@@ -20,7 +20,7 @@
                 <ul>
                     <li><a runat="server" href="~/oke.aspx">Home</a></li>
                     <li><a runat="server"  href="~/films.aspx">films</a></li>
-                    <li><a runat="server" href="~/bioscopen.aspx">bioscopen</a>                                     
+                    <li><a runat="server" href="~/bioscopen.aspx">bioscopen</a>                                   
                     </li>
                     <li><a runat="server"  href="~/trailers.aspx">trailers</a></li>
                     <li><a runat="server"  href="~/mypathe.aspx">mijn pathe</a></li>
