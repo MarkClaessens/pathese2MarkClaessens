@@ -18,7 +18,7 @@
             <h1>taken</h1>
             <nav>
                 <ul>
-                    <li><a runat="server">Home</a></li>
+                    <li><a runat="server" href="~/oke.aspx">Home</a></li>
                     <li><a runat="server"  href="~/films.aspx">films</a></li>
                     <li><a runat="server" href="~/bioscopen.aspx">bioscopen</a>                                     
                     </li>
