@@ -43,11 +43,7 @@
                         <asp:Button ID="Btnzoek" runat="server" Text="zoek film" OnClick="Btnzoek_Click" />
                         <asp:TextBox ID="Tbcheckedfilm" runat="server" ReadOnly="True"></asp:TextBox>
                         <asp:Button ID="Btnkoop" runat="server" Text="koop ticket" Enabled="False" OnClick="Btnkoop_Click" /><br>
-                        <asp:RequiredFieldValidator runat=server 
-                            controltovalidate=tbfilmnaam
-                            errormessage="filmnaam is required.">*filmnaam is required
-                        </asp:RequiredFieldValidator>
-                        
+                                                
                     </h3>
                     </hgroup>
                 <hgroup>
@@ -55,9 +51,7 @@
                 </hgroup>
                 <hgroup>
                 </hgroup>
-                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton1_Click" Height="200px" Width="200px" />          
-                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" Width="200px" OnClick="ImageButton2_Click" />
-                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" />
+                
                                
                 <p>
                     
@@ -67,7 +61,10 @@
             </article>
         </section>
         <aside>
-            <section class="popular-recipes">   
+            <section class="popular-recipes">  
+                <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/jworld.jpg" OnClick="ImageButton1_Click" Height="200px" Width="200px" />          
+                <asp:ImageButton ID="ImageButton2" runat="server" Height="200px" ImageUrl="~/Images/spy.jpg" Width="200px" OnClick="ImageButton2_Click" />
+                <asp:ImageButton ID="ImageButton3" runat="server" Height="200px" ImageUrl="~/Images/minions.jpg" Width="200px" OnClick="ImageButton3_Click" /> 
                 <h3>trailerss:</h3>
                  <object width="420" height="315"data="https://www.youtube.com/v/F-qBD17wwrQ"></object>
                 <object width="420" height="315"data="https://www.youtube.com/v/KmYNkasYthg"></object>

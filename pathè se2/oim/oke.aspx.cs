@@ -87,7 +87,11 @@ namespace oim
         }
 
         protected void ImageButton1_Click(object sender, ImageClickEventArgs e)
-        {
+        {   if(Page.IsValid == false)
+            {
+                Session["filmnaam"] = "Jurrasic World";
+                Response.Redirect("film.aspx");
+            }
             //als je op de plaatjes klikt ga je naar hun pagina, door de session weet hij welke pagina hij moet laden
             Session["filmnaam"] = "Jurrasic World";
             Response.Redirect("film.aspx");
@@ -95,12 +99,22 @@ namespace oim
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
+            if (Page.IsValid == false)
+            {
+                Session["filmnaam"] = "Spy";
+                Response.Redirect("film.aspx");
+            }
             Session["filmnaam"] = "Spy";
             Response.Redirect("film.aspx");
         }
 
         protected void ImageButton3_Click(object sender, ImageClickEventArgs e)
         {
+            if (Page.IsValid == false)
+            {
+                Session["filmnaam"] = "Minions";
+                Response.Redirect("film.aspx");
+            }
             Session["filmnaam"] = "Minions";
             Response.Redirect("film.aspx");
         }
