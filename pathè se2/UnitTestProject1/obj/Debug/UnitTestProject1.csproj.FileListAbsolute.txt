@@ -1,0 +1,6 @@
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\obj\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\bin\Debug\UnitTestProject1.dll.config
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+C:\Users\Mark\Documents\GitHub\pathese2\pathè se2\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

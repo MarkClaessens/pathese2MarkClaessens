@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pathese2", "oim\pathese2.csproj", "{B234AFB0-B9E4-4A22-A723-B631C15186AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTestProject1\UnitTestProject1.csproj", "{EF20166B-B7A4-43C0-987F-F06ECC952EF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{B234AFB0-B9E4-4A22-A723-B631C15186AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B234AFB0-B9E4-4A22-A723-B631C15186AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B234AFB0-B9E4-4A22-A723-B631C15186AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF20166B-B7A4-43C0-987F-F06ECC952EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF20166B-B7A4-43C0-987F-F06ECC952EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF20166B-B7A4-43C0-987F-F06ECC952EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF20166B-B7A4-43C0-987F-F06ECC952EF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

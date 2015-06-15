@@ -17,7 +17,7 @@ namespace oim
             gebruikers = new List<Gebruiker>();
             
         }
-
+        
         public void addfilm(int id, string FILMNAAM, string GENRE, int DUUR, string REGISSEUR, string TAAL, string LINK)
         {            
                 onderdeel film = new Kijkfilm(id, FILMNAAM, GENRE, DUUR, REGISSEUR, TAAL, LINK);

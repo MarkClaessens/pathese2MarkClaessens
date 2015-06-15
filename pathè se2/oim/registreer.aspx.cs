@@ -29,22 +29,46 @@ namespace oim
                     con.Open();
                     DbCommand com = OracleClientFactory.Instance.CreateCommand();
                     com.Connection = con;
-                    com.CommandText = "insert into gebruiker values(" + moviecount + ",'" + Tbvoornaam.Text + "','" + Tbachternaam.Text + "','" + Tbgeboortedatum.Text + "','" + Tbgeslacht.Text + "','" + Tbemail.Text + "','" + Tbww.Text + "')";
-                    com.ExecuteNonQuery();
-                    Zoekers zoeker = (Zoekers)Session["zoeker"];
-                    zoeker.addgebruiker(moviecount, Tbvoornaam.Text, Tbachternaam.Text, Tbgeslacht.Text, Tbemail.Text, Tbww.Text);
-                    Response.Redirect("mypathe.aspx");
+                    if(Page.IsValid)
+                    {
+                        com.CommandText = "insert into gebruiker values(" + moviecount + ",'" + Tbvoornaam.Text + "','" + Tbachternaam.Text + "','" + Tbgeboortedatum.Text + "','" + Tbgeslacht.Text + "','" + Tbemail.Text + "','" + Tbww.Text + "')";
+                        com.ExecuteNonQuery();
+                        Zoekers zoeker = (Zoekers)Session["zoeker"];
+                        zoeker.addgebruiker(moviecount, Tbvoornaam.Text, Tbachternaam.Text, Tbgeslacht.Text, Tbemail.Text, Tbww.Text);
+                        Response.Redirect("mypathe.aspx");
+                    }
+                    
                 }
             }
             catch
             {
                 btnconfirm.Enabled = false;
-                Tbvoornaam.Text = "error!";
-                Tbachternaam.Text = "database";
-                Tbgeboortedatum.Text = "fout";
-                Tbgeslacht.Text = "sorry";
-                Tbemail.Text = "hier";
-                Tbww.Text = "voor";
+                if(Tbvoornaam.Text == null)
+                {
+                    Tbvoornaam.Text = "vul in";
+                }
+                if (Tbachternaam.Text == null)
+                {
+                    Tbachternaam.Text = "vul in";
+                }
+                if (Tbgeslacht.Text == null)
+                {
+                    Tbgeslacht.Text = "vul in";
+                }
+                if (Tbgeboortedatum.Text == null)
+                {
+                    Tbgeboortedatum.Text = "vul in";
+                }
+                if (Tbemail.Text == null)
+                {
+                    Tbemail.Text = "vul in";
+                }
+                if (Tbww.Text == null)
+                {
+                    Tbww.Text = "vul in";
+                }
+                              
+                
             }
         }
     }
