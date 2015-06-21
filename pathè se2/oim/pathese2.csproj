@@ -103,6 +103,7 @@
     <Compile Include="bioscopen.aspx.designer.cs">
       <DependentUpon>bioscopen.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="Film.aspx.cs">
       <DependentUpon>Film.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

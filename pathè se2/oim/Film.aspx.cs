@@ -12,12 +12,14 @@ namespace oim
 {
     public partial class Film : System.Web.UI.Page
     {
+        Database database;
         Kijkfilm film;
         protected void Page_Load(object sender, EventArgs e)
         {
             // de film die aangeklikt is wordt door een session doorgegeven en de info wordt op de pagina gezet
             string filmnaam = (string)Session["filmnaam"];
             Zoekers zoeker = (Zoekers)Session["zoeker"];
+            database = new Database();
             Labelfilmaam.Text = filmnaam;
             film = zoeker.getfilm(filmnaam);
             Imagefilm.ImageUrl = film.path;
@@ -33,35 +35,8 @@ namespace oim
             //als je op de knop drukt dan wordt er voor de film waar je bent een ticket gekocht mits je ingelogt bent anders wordt je naar de inlog geleid
             if (Session["ingelogdaccount"] != null)
             {
-                Gebruiker gebruiker = (Gebruiker)Session["ingelogdaccount"];
-                try
-                {
-                    using (DbConnection con = OracleClientFactory.Instance.CreateConnection())
-                    {
-
-                        int aantalticks = -1; ;
-                        con.ConnectionString = ConfigurationManager.ConnectionStrings["ConnectieStr"].ConnectionString;
-                        con.Open();
-                        DbCommand comm = OracleClientFactory.Instance.CreateCommand();
-                        comm.Connection = con;
-                        comm.CommandText = "SELECT COUNT(*) from TICKET";
-                        DbDataReader reader = comm.ExecuteReader();
-                        while (reader.Read())
-                        {
-                            aantalticks = reader.GetInt32(0) + 1;
-                        }
-                        DbCommand com = OracleClientFactory.Instance.CreateCommand();
-                        com.Connection = con;
-                        com.CommandText = "insert into ticket(ticketNR, gebruikerNR, filmNR) values(" + aantalticks + "," + gebruiker.gebruikerNR + "," + film.id + ")";
-                        com.ExecuteNonQuery();
-                    }
-                }
-                    catch
-                {
-                    Button1.Text = "insertfout";
-                    Button1.Enabled = false;
-                }
-                
+                Gebruiker gebruiker = (Gebruiker)Session["ingelogdaccount"];                
+                database.koopticketbijfilm(gebruiker, film);               
             }
             else
             {
